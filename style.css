@@ -81,6 +81,8 @@ nav{
 }
 
 #navbar>span{
+    color: var(--font-color);
+    font-weight: bold;
     cursor: pointer;
 }
 
