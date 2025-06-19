@@ -240,9 +240,9 @@ document.querySelectorAll('[data-status]').forEach(btn => {
 });
 
 // Download button
-document.querySelector('.download-btn').addEventListener('click', () => {
-    alert('Download functionality would be implemented here');
-});
+// document.querySelector('.download-btn').addEventListener('click', () => {
+//     alert('Download functionality would be implemented here');
+// });
 
 // Initialize
 createBars();
