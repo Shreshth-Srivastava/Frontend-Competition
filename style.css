@@ -871,3 +871,12 @@ footer{
     background-color: black;
     font-weight: bold;
 }
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-blue);
+    color: var(--font-color);
+    font-size: 2rem;
+}
