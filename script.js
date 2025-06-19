@@ -2,7 +2,44 @@ const trial = document.querySelector('#trial');
 const shine = document.querySelector('#shine');
 const theme = document.querySelector('#theme');
 const Ratings = document.querySelector('#Ratings');
+const Hero = document.querySelector('#Hero');
+const Stats = document.querySelector('#Stats');
+const Graph = document.querySelector('#Graph');
+const Customers = document.querySelector('#Customers');
+const Cards = document.querySelector('#Cards');
+const loader = document.querySelector('#loader');
+const loading = document.querySelector('#loading');
+const progress = document.querySelector('#progress');
+const body = document.querySelector('body');
+const navbtns = [...document.querySelectorAll('#navbar>span')]
 const root = document.documentElement;
+
+window.addEventListener('load', ()=>{
+    progress.style.width = '100%';
+    setTimeout(()=>{
+        loader.style.display = 'none';
+    },3000)
+})
+
+navbtns.forEach(element => {
+    element.addEventListener('click', ()=>{
+        if(navbtns.indexOf(element) == 0){
+            Hero.scrollIntoView();
+        }
+        if(navbtns.indexOf(element) == 1){
+            Stats.scrollIntoView();
+        }
+        if(navbtns.indexOf(element) == 2){
+            Graph.scrollIntoView();
+        }
+        if(navbtns.indexOf(element) == 3){
+            Customers.scrollIntoView();
+        }
+        if(navbtns.indexOf(element) == 4){
+            Cards.scrollIntoView();
+        }
+    })
+});
 
 trial.addEventListener('mouseover', ()=>{
     shine.style.display = 'block';
